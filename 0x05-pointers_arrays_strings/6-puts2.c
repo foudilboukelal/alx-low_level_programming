@@ -18,11 +18,11 @@ void puts2(char *str)
 		i++;
 	}
 	j = i - 1;
-	for (k = 0; k < j; k++)
+	for (k = 0; k <= j; k++)
 	{
-		if (i % 2 == 0)
+		if (k % 2 == 0)
 		{
-			_putchar(str[i]);
+			_putchar(str[k]);
 		}
 	}
 	_putchar('\n');
