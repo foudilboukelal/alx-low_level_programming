@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * _atoi - converts a string to an integer
  * @s: string to be converted
@@ -46,24 +47,28 @@ int _atoi(char *s)
 }
 
 /**
- * main - program that multiplies two numbers
+ * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0 (Success), 1 (error)
+ *
+ * Return: 0 (Success), 1 (Error)
  */
 int main(int argc, char *argv[])
 {
-	int mul, nb1, nb2;
+	int result, num1, num2;
 
 	if (argc < 3 || argc > 3)
 	{
-		print("Error\n");
+		printf("Error\n");
 		return (1);
 	}
-	nb1 = _atoi(argv[1]);
-	nb2 = _atoi(argv[2]);
-	mul = nb1 * nb2;
 
-	ptintf("%d\n", mul);
+	num1 = _atoi(argv[1]);
+	num2 = _atoi(argv[2]);
+	result = num1 * num2;
+
+	printf("%d\n", result);
+
 	return (0);
 }
+
